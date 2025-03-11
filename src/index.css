@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* container class */
+.info_container{
+    padding: 0 100px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .info_container {
+      padding: 0 30px;
+    }
+    
+  }
+  
+  .info_body{
+    padding: 60px 100px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .info_body {
+      padding: 60px 30px;
+    }
+  }
+  
+  
+  /* HTML: <div class="loader"></div> */
+  .loader {
+    width: fit-content;
+    padding-bottom: 8px;
+    background: linear-gradient(currentColor 0 0) 0 100%/0% 2px no-repeat;
+    transition: background-size 0.5s ease-out;
+  }
+  
+  .loader:hover {
+    background-size: 100% 2px;
+  }
