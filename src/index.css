@@ -5,15 +5,16 @@
 
 /* container class */
 .info_container{
-    padding: 0 100px;
+    /* padding: 0 100px; */
     width: 100%;
     max-width: 1920px;
+    max-height: 800px;
     margin: 0 auto;
   }
   
   @media screen and (max-width: 768px) {
     .info_container {
-      padding: 0 30px;
+      padding: 0 0px;
     }
     
   }

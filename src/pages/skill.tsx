@@ -2,7 +2,7 @@ const Skills = () => {
   return (
     <div className="info_body bg-slate-400">
       <div className="flex flex-col">
-        <h2 className="font-bold text-3xl pb-3">Services</h2>
+        <h2 className="font-bold text-3xl pb-3">Skills</h2>
         <div className="">
           <div className="w-14 h-1 bg-black mb-5"></div>
         </div>

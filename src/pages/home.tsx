@@ -3,6 +3,7 @@ import Sidebar from "../components/core/sidebar";
 import Navbar from "../components/core/navbar";
 import { Background } from "../components/core/background";
 import Skills from "./skill";
+import About from "./about";
 
 const Home = () => {
   const [_isNavbarFixed, setIsNavbarFixed] = useState(false);
@@ -42,7 +43,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="w-full h-screen flex flex-col lg:flex-row overflow-hidden">
+      <div className="info_container w-full h-screen flex flex-col lg:flex-row overflow-hidden">
         {/* Sidebar - Sticky on Desktop, Top Navbar on Mobile */}
         <div
           className={`z-[1] ${
@@ -76,6 +77,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div>
+        <About />
+      </div>
+
       <div>
         <Skills />
       </div>
