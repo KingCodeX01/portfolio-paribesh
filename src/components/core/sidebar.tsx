@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Sidebar = () => {
   const [copied, setCopied] = useState(false);
