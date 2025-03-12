@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const Navbar = () => {
   return (
     <div className="w-full bg-[#2C2D32] h-20 flex items-center justify-center">

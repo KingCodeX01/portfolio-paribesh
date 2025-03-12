@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Sidebar = () => {
-  const [copied, setCopied] = useState(false);
+  const [_copied, setCopied] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const copyToClipboard = () => {

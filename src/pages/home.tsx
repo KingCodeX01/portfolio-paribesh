@@ -5,7 +5,7 @@ import { Background } from "../components/core/background";
 import Skills from "./skill";
 
 const Home = () => {
-  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+  const [_isNavbarFixed, setIsNavbarFixed] = useState(false);
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 1024);
   const [lastScrollY, setLastScrollY] = useState(window.scrollY);
   const [scrollDirection, setScrollDirection] = useState("up");
