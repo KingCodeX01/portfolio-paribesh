@@ -88,9 +88,15 @@ const Sidebar = () => {
 
           {/* Sidebar Menu Items */}
           <ul className="mt-16 space-y-4 text-lg">
-            <li className="p-4 hover:bg-gray-700 cursor-pointer">Home</li>
-            <li className="p-4 hover:bg-gray-700 cursor-pointer">About</li>
-            <li className="p-4 hover:bg-gray-700 cursor-pointer">Projects</li>
+            <li className="p-4 hover:bg-gray-700 cursor-pointer">
+              <a href="/">Home</a>
+            </li>
+            <li className="p-4 hover:bg-gray-700 cursor-pointer">
+              <a href="/about">About</a>
+            </li>
+            <li className="p-4 hover:bg-gray-700 cursor-pointer">
+              <a href="/skills">Skills</a>
+            </li>
             <li className="p-4 hover:bg-gray-700 cursor-pointer">Blog</li>
             <li className="p-4 hover:bg-gray-700 cursor-pointer">Contact</li>
           </ul>
