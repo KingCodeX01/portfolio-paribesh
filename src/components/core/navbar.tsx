@@ -1,8 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import { EffectCoverflow, Autoplay } from "swiper/modules";
 
 const quotes = [
   "The only limit to our realization of tomorrow is our doubts of today.",
@@ -34,7 +31,7 @@ const Navbar = () => {
           slideShadows: false,
         }}
         // pagination={true}
-        modules={[EffectCoverflow, Pagination, Autoplay]}
+        modules={[EffectCoverflow, Autoplay]}
         className="mySwiper"
       >
         {quotes.map((quote, index) => (

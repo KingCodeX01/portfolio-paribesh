@@ -4,6 +4,7 @@ import Navbar from "../components/core/navbar";
 import { Background } from "../components/core/background";
 import Skills from "./skill";
 import About from "./about";
+import Contact from "./contact";
 
 const Home = () => {
   const [_isNavbarFixed, setIsNavbarFixed] = useState(false);
@@ -83,6 +84,10 @@ const Home = () => {
 
       <div>
         <Skills />
+      </div>
+
+      <div>
+        <Contact />
       </div>
     </>
   );
