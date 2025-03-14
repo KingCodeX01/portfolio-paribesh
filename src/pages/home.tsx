@@ -5,6 +5,7 @@ import { Background } from "../components/core/background";
 import Skills from "./skill";
 import About from "./about";
 import Contact from "./contact";
+import { Footer } from "../components/core/footer";
 
 const Home = () => {
   const [_isNavbarFixed, setIsNavbarFixed] = useState(false);
@@ -79,15 +80,23 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <About />
+        <div>
+          <About />
+        </div>
+
+        <div>
+          <Skills />
+        </div>
+
+        <div>
+          <Contact />
+        </div>
       </div>
 
       <div>
-        <Skills />
-      </div>
-
-      <div>
-        <Contact />
+        <div>
+          <Footer />
+        </div>
       </div>
     </>
   );

@@ -1,5 +1,4 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Autoplay } from "swiper/modules";
+import { useState, useEffect } from "react";
 
 const quotes = [
   "The only limit to our realization of tomorrow is our doubts of today.",
@@ -11,35 +10,22 @@ const quotes = [
 ];
 
 const Navbar = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto-slide every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % quotes.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="w-full bg-[#2C2D32] h-20 flex items-center justify-center">
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={1}
-        loop={true} // Infinite Loop
-        autoplay={{
-          delay: 5000, // 5 seconds per quote
-          disableOnInteraction: false,
-        }}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: false,
-        }}
-        // pagination={true}
-        modules={[EffectCoverflow, Autoplay]}
-        className="mySwiper"
-      >
-        {quotes.map((quote, index) => (
-          <SwiperSlide key={index}>
-            <p className="text-white text-xl text-center px-5">{quote}</p>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <p className="text-white text-xl text-center px-5 transition-opacity duration-500">
+        {quotes[currentIndex]}
+      </p>
     </div>
   );
 };
